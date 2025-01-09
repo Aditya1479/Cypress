@@ -16,11 +16,13 @@ cy.get('@productLocator').find('.product').should('have.length',4)
 
 
 ///Parent-child chaining and log will print in console option
-cy.get('@productLocator').find('.product').eq(1).contains('ADD TO CART').click().then(function()
-{
-    console.log('sf') 
-}
-)
+cy.get('@productLocator').find('.product').eq(1).contains('ADD TO CART').click()
+
+// cy.get('@productLocator').find('.product').eq(1).contains('ADD TO CART').click().then(function()
+// {
+//     console.log('sf') 
+// }
+// )
 
 //Clicking on ADD TO CART button of specific element
 cy.get('@productLocator').find('.product').each(($e1,index,$list)=>{
