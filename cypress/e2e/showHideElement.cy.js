@@ -11,7 +11,7 @@ it('dropdown test case', function() {
     
     cy.get('#show-textbox').click()
     cy.get('#show-textbox').should('be.visible')
-    cy.get('#displayed-text').click().type(' Type Anything ')
+    cy.get('#displayed-text').click().type(' Type Anything ').should('have.value',' Type Anything ')
 })
   
 

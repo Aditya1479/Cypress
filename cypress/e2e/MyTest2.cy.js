@@ -28,6 +28,4 @@ cy.get('@productLocator').find('.product').each(($e1,index,$list)=>{
  cy.get('button').click()
 
 })
-  
-
 } )

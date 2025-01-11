@@ -13,6 +13,7 @@ cy.url().should('include', 'top')
 
 //clicking on hide element from DOM directly
 cy.contains('Reload').click({force:true})
+cy.url().should('include','AutomationPractice')
 
 })
 })
