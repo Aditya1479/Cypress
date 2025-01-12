@@ -18,7 +18,16 @@ describe("Framework suit ", function()
              cy.get(':nth-child(1) > .form-control').should('have.attr','minlength','2')
              cy.get('#inlineRadio3').should('be.disabled')
              cy.get(':nth-child(2) > .nav-link').click()
-             cy.SelectProduct('Blackberry')
+
+             /////custome method created to use for clicking on single element
+            //  cy.SelectProduct('Blackberry')
+            //  cy.SelectProduct('Nokia Edge')
+
+            ///New array created in example.json and used custome method to click on each element
+             this.data.productName.forEach(element => {
+                cy.SelectProduct(element)
+             });
+             
 
             
 
