@@ -1,4 +1,7 @@
-///<reference types="Cypress"/>
+/// <reference types="Cypress"/>
+import HomePage from "../homePage/HomePage"
+import  ProductPage from "../productPage/ProductPage"
+
 describe("Framework suit ", function()
     {   
         before(function(){
@@ -10,14 +13,18 @@ describe("Framework suit ", function()
             
         })
         it("My First Test Case ", function() {
-            cy.visit("https://rahulshettyacademy.com/angularpractice/")
-             cy.get(':nth-child(1) > .form-control').type(this.data.name)
-             cy.get('select').select(this.data.gender)
+
+            const homePage= new HomePage()
+            const productPage= new ProductPage()
+            homePage.visitURL()
+            homePage.getName().type(this.data.name)
+            homePage.genderSelect().select(this.data.gender)
              //Assertion
-             cy.get(':nth-child(4) > .ng-untouched').should('have.value',this.data.name)
-             cy.get(':nth-child(1) > .form-control').should('have.attr','minlength','2')
-             cy.get('#inlineRadio3').should('be.disabled')
-             cy.get(':nth-child(2) > .nav-link').click()
+             homePage.twoWayBindingExample().should('have.value',this.data.name)
+             homePage.getName().should('have.attr','minlength','2')
+             homePage.getEnterprenur().should('be.disabled')
+             
+             homePage.getShop().click()
 
              /////custome method created to use for clicking on single element
             //  cy.SelectProduct('Blackberry')
@@ -27,7 +34,10 @@ describe("Framework suit ", function()
              this.data.productName.forEach(element => {
                 cy.SelectProduct(element)
              });
-             
+            
+             productPage.checkout().click()
+
+             cy.log("All tests executed")
 
             
 
