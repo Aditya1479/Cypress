@@ -1,6 +1,8 @@
 /// <reference types="Cypress"/>
 import HomePage from "../homePage/HomePage"
-import  ProductPage from "../productPage/ProductPage"
+import ProductPage from "../productPage/ProductPage"
+
+
 
 describe("Framework suit ", function()
     {   
@@ -35,7 +37,7 @@ describe("Framework suit ", function()
                 cy.SelectProduct(element)
              });
             
-             productPage.checkout().click()
+             productPage.checkoutButton().click()
 
              cy.log("All tests executed")
 
