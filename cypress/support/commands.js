@@ -16,6 +16,7 @@ Cypress.Commands.add('SelectProduct', (Pname) => {
             const produtcname=$e1.text()
             if(produtcname.includes(Pname)){
                 cy.get(':nth-child(4) > .card > .card-footer > .btn').click()
+                cy.get(':nth-child(3) > .card > .card-footer > .btn').click()
             }
         
          })
