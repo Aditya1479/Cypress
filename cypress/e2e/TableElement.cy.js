@@ -4,7 +4,7 @@ describe('My First Test suite', function()
 {
 it('My first test case', function() {
 ///First Test case body
-cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
+cy.visit(Cypress.env('url')+ "AutomationPractice/")
 
 //capturing value in next element to finded element using next() method
 cy.get('tr td:nth-child(2)').each(($e1,index,$list) => 

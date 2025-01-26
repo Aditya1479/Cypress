@@ -6,7 +6,7 @@ describe('Basic mouse over test suite ', function()
 it("Mouse over Test case ", function()
 {
 
-cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
+    cy.visit(Cypress.env('url')+"/AutomationPractice/")
 cy.get('div.mouse-hover-content').invoke('show')
 cy.contains('Top').click()
 cy.url().should('include', 'top')

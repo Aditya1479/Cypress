@@ -1,10 +1,10 @@
-<reference types="Cypress"/>
+///<reference types="Cypress"/>
 
 describe('My First Test suite', function()
 {
 it('My first test case', function() { 
 ///First Test case body
-cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/")
+cy.visit(Cypress.env('url')+ "seleniumPractise/#/")
 cy.get('.search-keyword').type("ca")
 cy.wait(2000)
 

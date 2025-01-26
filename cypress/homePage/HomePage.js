@@ -1,9 +1,6 @@
 class HomePage
 {
 
-    visitURL(){
-        return cy.visit("https://rahulshettyacademy.com/angularpractice/")
-    }
     getName(){
        return cy.get(':nth-child(1) > .form-control')
     }
