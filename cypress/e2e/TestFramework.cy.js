@@ -14,7 +14,7 @@ describe("Framework suit ", function()
             })
             
         })
-        it("My First Test Case ", function() {
+        it("My First TestCase FrameWork ", function() {
             
             const homePage= new HomePage()
             const productPage= new ProductPage()
