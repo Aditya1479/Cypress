@@ -1,7 +1,7 @@
 /// <reference types="Cypress"/>
-import HomePage from "../homePage/HomePage"
-import ProductPage from "../productPage/ProductPage"
-import ShopPage from "../shopPage/ShopPage"
+import HomePage from "../support/homePage/HomePage"
+import ProductPage from "../support/productPage/ProductPage"
+import ShopPage from "../support/shopPage/ShopPage"
 
 
 describe("Framework suit ", function()
