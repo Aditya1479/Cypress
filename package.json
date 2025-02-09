@@ -7,7 +7,7 @@
     "report": "npx cypress run --reporter mochawesome",
     "headed": "npm run report --headed",
     "chrometest": "npm run headed --browser chrome",
-    "recordDashboardTest":"npm run report --record --key f7936d47-5fb6-4400-8ffe-d591137a9882",
+    "recordDashboardTest":"npm run report --record --key 331b70cb-0028-4b46-a2ab-52ebc06e15df",
     "RunspecifTestCase": "npm run report -- --spec \"cypress/e2e/RunSpecificTestcases/*\""
   },
   "author": "Aditya",
