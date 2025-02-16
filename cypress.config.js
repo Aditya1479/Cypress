@@ -24,7 +24,7 @@ module.exports = defineConfig({
       "url": "https://rahulshettyacademy.com/"
 
   }
-  
+  testfiles : "**/*.feature",
 
   
   },
