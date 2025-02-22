@@ -29,7 +29,7 @@ cy.get('@productLocator').find('.product').each(($e1,index,$list)=>{
     const vegTextName=$e1.find('h4.product-name').text()
     if(vegTextName.includes('Capsicum'))
         {
-            $e1.find('button').click()  
+            $e1.find('button').click()
     }
 })
 // const pagetext= cy.get('.brand')

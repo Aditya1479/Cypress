@@ -23,7 +23,7 @@ module.exports = defineConfig({
     env:{
       "url": "https://rahulshettyacademy.com/"
 
-  }
+  },
   testfiles : "**/*.feature",
 
   
