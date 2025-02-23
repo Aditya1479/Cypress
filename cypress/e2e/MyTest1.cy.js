@@ -15,7 +15,7 @@ cy.get('.products').as('productLocator')
 cy.get('@productLocator').find('.product').should('have.length',4)
 
 
-///Parent-child chaining and log will print in console option
+///Parent-child chaining using find() and log will print in console option
 cy.get('@productLocator').find('.product').eq(1).contains('ADD TO CART').click()
 
 // cy.get('@productLocator').find('.product').eq(1).contains('ADD TO CART').click().then(function()
@@ -42,7 +42,7 @@ cy.get('.brand').should('have.text','GREENKART')
 cy.get('.brand').then(function(logotext)
  {
 
-     cy.log(logotext.text())
+     cy.log('Printing Logo name :> '+logotext.text())
  })
 
  cy.get('.cart-icon > img').click()

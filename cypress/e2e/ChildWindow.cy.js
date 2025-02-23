@@ -6,7 +6,7 @@ describe('Child element test suite ', function()
 it("child Window  Test case ", function()
 {
 
-cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
+cy.visit(Cypress.env('url')+'AutomationPractice/')
  cy.get('#openwindow').invoke('removeAttr','target').click().then(function(e1)
  {
     //Prop method is used to use the to provide the attibute value

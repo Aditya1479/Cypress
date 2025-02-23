@@ -10,7 +10,7 @@ cy.origin('https://www.qaclickacademy.com/', () => {
     cy.url().should('include', 'qaclickacademy')
   })
 ///navigate method is not working throwing Blocked a frame with origin "https://rahulshettyacademy.com" from accessing a cross-origin frame.
-///cy.go('back')
+//cy.go('back')
 
 
 })

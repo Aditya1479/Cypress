@@ -6,7 +6,7 @@ import 'cypress-iframe';
 
 describe('Iframe test suite', function() {
   it('Iframe test case', function() {
-    cy.visit('https://rahulshettyacademy.com/AutomationPractice/');
+    cy.visit(Cypress.env('url')+'AutomationPractice/');
 
     // Wait for the iframe to load
     cy.frameLoaded('#courses-iframe');
