@@ -11,8 +11,8 @@ cy.visit(Cypress.env('url')+'AutomationPractice/')
  {
     //Prop method is used to use the to provide the attibute value
     const url=e1.prop('href')
-    cy.log(url)
-    if (url) {
+    let childUrl="https://www.qaclickacademy.com/"
+    if (url == childUrl) {
       cy.visit(url);
     } else {
       cy.log('URL is not found or is empty');
