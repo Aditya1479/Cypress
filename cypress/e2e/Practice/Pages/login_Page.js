@@ -6,7 +6,6 @@ export class LoginPage {
 
     enterUsername(username) {
         cy.get(this.LoginPage_textbox_username).type(username)
-
     }
 
     enterPassword(password) {

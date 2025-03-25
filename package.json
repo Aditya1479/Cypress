@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "pretest": "Pre test executed",
+    "posttest": "Post test executed",
     "test": "echo \"Error: no test specified\" && exit 1",
     "report": "npx cypress run --reporter mochawesome",
     "build":"npm run report -- --spec \"cypress/e2e/RunSpecificTestcases/*\"",
     "headed": "npm run report --headed",
     "chrometest": "npm run headed --browser chrome",
     "recordDashboardTest": "npm run report --record --key 331b70cb-0028-4b46-a2ab-52ebc06e15df",
-    "RunspecifTestCase": "npm run report -- --spec \"cypress/e2e/RunSpecificTestcases/*\""
+    "RunspecifTestCase": "npm run report -- --spec \"cypress/e2e/RunSpecificTestcases/*\"",
+    "Practice": "npx cypress run --spec \"cypress/e2e/Practice"
   },
   "cypress-cucumber-preprocessor":{
     "nonGlobalStepDefinitions":true
