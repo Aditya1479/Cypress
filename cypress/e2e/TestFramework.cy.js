@@ -1,4 +1,4 @@
-/// <reference types="Cypress"/>
+
 import HomePage from "../support/homePage/HomePage"
 import ProductPage from "../support/productPage/ProductPage"
 import ShopPage from "../support/shopPage/ShopPage"
