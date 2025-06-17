@@ -5,5 +5,9 @@ export function fillform(){
 }
 
 export function genderSelect(){
-    cy.get(HomePageObjects.gender).select("Male");
+    cy.get(HomePageObjects.gender).select("Male"); 
+}
+
+export function clickOnShopButton(){
+    cy.get(HomePageObjects.shopbutton).contains('Shop').click()
 }

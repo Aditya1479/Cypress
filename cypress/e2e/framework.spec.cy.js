@@ -13,5 +13,7 @@ describe("e2e frame work", function() {
         homePagetasks.fillform();
         homePagetasks.genderSelect();
         homePageQue.verifyTwoWayBinding();
+        homePageQue.isEntrepreneurvalue();
+        homePagetasks.clickOnShopButton();
     })
 })

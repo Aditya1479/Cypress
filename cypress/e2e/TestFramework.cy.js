@@ -20,7 +20,7 @@ describe("Framework suit ", function()
             const productPage= new ProductPage()
             const shoppage= new ShopPage()
             
-            cy.visit(Cypress.env('url')+"angularpractice/")
+            cy.visit(Cypress.env('url')+"angularpractice/") 
             homePage.getName().type(this.data.name)
             homePage.genderSelect().select(this.data.gender)
              //Assertion
